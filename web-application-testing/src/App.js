@@ -11,7 +11,7 @@ function App() {
   const [count, setCount] = useState(initialValues);
 
   useEffect(() => {
-    if (count.strike === 4 || count.ball === 5) {
+    if (count.strike === 3 || count.ball === 4) {
       setCount(initialValues);
     }
   }, [count, initialValues])
